@@ -126,12 +126,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
  #brand {
    position: absolute;
-   bottom: 30px;
-   left: 30px;
+   bottom: 10px;
+   left: 0;
+   padding-left: 30px;
+   background-color: #fff;
    display: flex;
   flex-direction: row;
   align-items: center;
   z-index: 50;
+  height: 100px;
  }
 
  .brand_img {
@@ -524,6 +527,15 @@ span.code {
  *********************************************/
 
  @media only screen and (max-width: 600px) {
+
+  #brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
   .reveal p,
   .reveal li {
     font-size: 50px;
